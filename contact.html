@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak - Tea House</title>
+    <style>
+      /* CSS Umum */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #fff; /* Latar belakang putih */
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      /* Gaya Header */
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .nav-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .nav-list li {
+        display: inline-block;
+        margin-left: 20px;
+      }
+
+      .nav-list li a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      /* Gaya Halaman Kontak */
+      .contact-section {
+        background-color: #f5f5f5; /* Warna latar belakang yang sangat ringan */
+        padding: 40px 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+
+      .contact-form {
+        margin: 0 auto;
+        max-width: 400px; /* Lebar maksimum formulir */
+        background-color: #fff; /* Warna latar belakang form yang sama */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .contact-form h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .contact-form label,
+      .contact-form textarea,
+      .contact-form input[type='text'],
+      .contact-form input[type='email'],
+      .contact-form .btn-submit {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      .contact-form textarea {
+        height: 150px;
+      }
+
+      .contact-form .btn-submit {
+        background-color: #4caf50; /* Warna tombol yang lebih ramah */
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      .contact-form .btn-submit:hover {
+        background-color: #45a049; /* Warna tombol saat dihover */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <div class="logo">Tea House</div>
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-form">
+          <h2>Formulir Kontak</h2>
+          <form action="proses_formulir.php" method="POST">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="pesan">Pesan:</label>
+            <textarea id="pesan" name="pesan" required></textarea>
+
+            <button type="submit" class="btn-submit">Kirim Pesan</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <!-- Tambahkan footer situs web Anda di sini -->
+    </footer>
+  </body>
+</html>
